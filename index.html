@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl(28, 10%, 53%);
+      padding: 3rem 30rem;
+    }
+    #body{
+      width: 450px;
+    }
+    .side{
+      margin-top: 1rem;
+      margin-left: 13rem;
+      text-align: right;
+    }
+    .moreside{
+      margin-left: 16rem;
+      
+    }
+    .grey{
+      color: grey;
+    }
+    .top{
+      background-color: hsl(10, 79%, 65%);
+      padding: .3rem 1rem;
+      border-radius: 20px;
+      color: #fff;
+    }
+    .bottom{
+      background-color: hsl(27, 66%, 92%);
+      border-radius: 20px;
+      margin: 2rem 0;
+      padding: .3rem 1rem;
+
+    }
+    .box{
+      background-color: hsl(10, 79%, 65%);
+      position: relative;
+      border-radius: 10px;
+      width: 80px;
+      margin: .7rem;
+    }
+    .box:hover{
+      background-color:hsl(30, 81%, 65%);
+
+    }
+    .box2{
+      margin: .5rem 1.2rem;
+    }
+    .mon{
+      height: 40px;
+      top: 60px;
+    }
+    .tue{
+      height: 85px;
+      top: 15px;
+    }
+    .wed{
+      height: 100px;
+      background-color: hsl(186, 34%, 60%);
+    }
+    .wed:hover{
+      background-color: hsl(185, 54%, 81%);
+      
+    }
+    .thu{
+      height: 80px;
+      top: 20px;
+    }
+    .fri{
+      height: 60px;
+      top: 40px;
+    }
+    .sat{
+      height: 90px;
+      top: 10px;
+    }
+    .sun{
+      height: 65px;
+      top: 35px;
+    }
+    .flex{
+      display: flex;
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(0, 0%, 100%);
+      text-decoration-line: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main id="body">
+    <div class="top flex">
+      <div>
+
+        <p>My balance</p>
+        <h3>$921.48</h3>
+      </div>
+      <div>
+        <img class="side moreside" src="images/logo.svg" alt="logo">
+      </div>
+    </div>
+    <div class="bottom">
+    <h1>Spending - Last 7 days</h1>
+<div class="flex">
+    <div class="box mon"></div>
+    <div class="box tue"></div>
+    <div class="box wed"></div>
+    <div class="box thu"></div>
+    <div class="box fri"></div>
+    <div class="box sat"></div>
+    <div class="box sun"></div>
+  </div>
+<div class="flex">
+    <p class="box2">mon</p>
+    <p class="box2">tue</p>
+    <p class="box2">wed</p>
+    <p class="box2">thu</p>
+    <p class="box2">fri</p>
+    <p class="box2">sat</p>
+    <p class="box2">sun</p>
+  </div>
+    <div class="flex">
+      <div>
+        <p class="grey">Total this month</p>
+        <h1>$478.33</h1>
+      </div>
+      <div class="side">
+        <p>+2.4%</p>
+        <p class="grey">from last month</p>
+      </div>
+    </div>
+  </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" >Frontend Mentor</a>.
+    Coded by <a href="#">abhishek bansal</a>.
+  </div>
+</body>
+
+</html>
